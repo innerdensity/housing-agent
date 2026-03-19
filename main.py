@@ -1,12 +1,12 @@
 import config
-from fetch_page import fetch_test_page
 
-print("Housing agent project is working")
-print("Source:", config.SOURCE_SITE)
-print("Max price:", config.MAX_PRICE)
-print("Allowed home types:", config.ALLOWED_HOME_TYPES)
-print("Target neighborhoods:", config.TARGET_NEIGHBORHOODS)
-print("Search track:", config.SEARCH_TRACK)
+def main():
+    print("Housing agent started")
+    print("Source:", config.SOURCE_SITE)
+    print("Search track:", config.SEARCH_TRACK)
+    print("Max price:", config.MAX_PRICE)
+    print("Allowed home types:", ", ".join(config.ALLOWED_HOME_TYPES))
+    print("Target neighborhoods:", ", ".join(config.TARGET_NEIGHBORHOODS))
 
-print("\nRunning test fetch...\n")
-fetch_test_page()
+if __name__ == "__main__":
+    main()
