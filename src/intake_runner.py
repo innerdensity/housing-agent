@@ -1,5 +1,11 @@
+import sys
+from pathlib import Path
+
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+sys.path.append(str(PROJECT_ROOT))
+
 import config
-from search_plan import build_search_plan
+from src.search_plan import build_search_plan
 
 
 def run_intake():
