@@ -4,3 +4,4 @@ lxml
 gspread
 google-auth
 python-dotenv
+playwright
